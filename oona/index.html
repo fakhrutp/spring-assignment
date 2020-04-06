@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/4a608a82be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+    <!-- Animate On Scroll Library from https://michalsnik.github.io/aos/ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="#">My Portfolio</a>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">My skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Scroll top button -->
+      <button onclick="topFunction()" id="topBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <!-- Hero banner -->
+      <section id="hero-banner">
+        <div class="content">
+          <h1>Hello, I'm Oona</h1>
+          <p>
+            Full Stack Web Developer Student
+          </p>
+        </div>
+      </section>
+      <!-- About me -->
+      <section id="about-me" class="container">
+        <div id="about-me-text">
+          <h2>About me</h2>
+          <p>
+            I am Full stack web developer student at Business College Helsinki.
+            I used to work as a mathematics and physics teacher in junior high school, but now I'm
+            looking for new opportunities.
+          </p>
+        </div>
+        <img id="myphoto" src="img/myphoto.jpg" alt="my photo" />
+      </section>
+      <!-- education -->
+      <section id="education" class="container">
+        <h2>Education</h2>
+        <table>
+          <tr>
+            <td>Jan 2020 - Present</td>
+            <td>Full stack web developer program</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Business College Helsinki</td>
+          </tr>
+          <tr>
+            <td>2009 - 2016</td>
+            <td>Master of Science</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Mathematics Teacher and Class Teacher Education</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>University of Eastern Finland</td>
+          </tr>
+          <tr>
+            <td>2007 - 2009</td>
+            <td>Tiirismaa High School</td>
+          </tr>
+        </table>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="container">
+        <h2>My Skills</h2>
+        <p>
+          Here's what I have been studying so far.
+        </p>
+        <section id="cards">
+          <div class="card" id="html" data-aos="zoom-in">
+            <p class="icon">
+              <i class="fab fa-html5"></i>
+            </p>
+            <p>HTML</p>
+          </div>
+
+          <div class="card" id="css" data-aos="zoom-in">
+            <p class="icon">
+              <i class="fab fa-css3-alt"></i>
+            </p>
+            <p>
+              CSS
+            </p>
+          </div>
+          <div class="card" id="js" data-aos="zoom-in">
+            <p class="icon">
+              <i class="fab fa-js-square"></i>
+            </p>
+            <p>JS</p>
+          </div>
+          <div class="card" id="ui" data-aos="zoom-in">
+            <p class="icon"><i class="fas fa-pencil-alt"></i></p>
+            <p>UI DESING</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="container">
+      <div class="footer-text">
+        <p>
+          Download my CV here
+        </p>
+        <a href="my_cv.pdf" download="cv">
+          <button id="cv-btn">Download CV</button>
+        </a>
+      </div>
+      <div class="footer-text">
+        <h3></h3>
+        <p></p>
+      </div>
+      <div class="footer-text">
+        <h3>Contact</h3>
+        <p>
+          <a id="mail-to" href="mailto:oona.kakkonen@edu.bc.fi"
+            >oona.kakkonen@edu.bc.fi</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="scripts.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
